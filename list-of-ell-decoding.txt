@@ -1,0 +1,3 @@
+Recent research has studied "threshold rates" for various properties of random linear codes. In particular, https://arxiv.org/pdf/2009.04553 established, among many other things, the threshold for "list-of-2 decoding". This is interesting because it departs from the general framework and is different than the corresponding threshold for random (non-linear) codes.
+
+The goal of this thesis would be to adapt the ideas behind the list-of-2 case to analyze "list-of-L decoding" for larger list sizes L>2.
