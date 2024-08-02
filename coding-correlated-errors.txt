@@ -1,0 +1,8 @@
+Noisy communication channels which corrupt transmissions with random deletions of symbols are important simplified models of errors occurring in modern data storage systems. Most existing works study such channels where deletions are applied *independently* to each transmitted symbol. However, in real-world systems (such as DNA-based data storage) there exist correlations between errors.
+
+The goal of this project would be to explore the fundamental limits of such noisy communication channels with various meaningful models of correlated errors (with particular emphasis on deletions, substitutions, and erasures). Depending on the student's interests, this may involve estimating the optimal rate of information transmission through such channels (an initial direction would be to establish analogues of Shannon's noisy channel coding theorem for such channels),as well as developing ways of encoding information to survive such errors.
+
+Relevant literature on coding against deletions:
+https://arxiv.org/abs/1910.07199
+https://arxiv.org/abs/1903.09992
+https://arxiv.org/abs/2401.16063
