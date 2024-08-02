@@ -6,15 +6,30 @@ General themes:
 
 - Coding theory and information theory (in particular, design of efficient codes, sample complexity of statistical reconstruction problems, complexity of computational problems on codes and lattices) 
 
-- Pseudorandomness (in particular, derandomization and randomness extractors)
+- Pseudorandomness (in particular, derandomization, randomness extractors, and connections to cryptography)
 
 
-Some concrete topics (students are welcome to contact me about other possible dissertation topics):
+Some concrete topics (students are welcome to contact me about other possible dissertation topics; see also my personal homepage above):
 
-- Trace reconstruction and population recovery from trims and mutations, motivated by connections to computational biology.
+* Information and coding theory
 
-- Memory-sample bounds for noisy learning problems over non-binary alphabets.
+- Trace reconstruction and population recovery from trims and mutations, motivated by connections to computational biology. https://jmlribeiro.github.io/trace-rec-trim-mutate.txt
 
-- Existence of continuously non-malleable codes below 8 states.
+- Memory-sample bounds for noisy learning problems over a non-binary alphabet. https://jmlribeiro.github.io/memory-sample-bounds.txt
 
-- YOSO distributed coin tossing with semi-random corruptions.
+- Codes against random but correlated errors. https://jmlribeiro.github.io/coding-correlated-errors.txt
+
+- Threshold rates for "list-of-\ell" decoding for random linear codes (with Nicolas Resch). https://jmlribeiro.github.io/list-decoding-rlc.txt
+
+
+* Cryptography
+
+- Existence of continuously non-malleable codes below 8 states. https://jmlribeiro.github.io/cnmcs.txt
+
+- YOSO distributed coin tossing against semi-random corruptions. https://jmlribeiro.github.io/yoso-semi-random.txt
+
+
+* Pseudorandomness
+
+- Additive combinatorics and high-error dispersers beyond line-point incidences (with Dean Doron). https://jmlribeiro.github.io/3-2-1.txt
+
