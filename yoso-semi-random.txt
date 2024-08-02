@@ -1,0 +1,5 @@
+The goal of this thesis is to study "stateless" secure multiparty protocols for generating verifiable random bits, a central cryptographic primitive. More specifically, we will consider the You-Only-Speak-Once (YOSO) model for stateless MPC, where parties speak publicly in sequence (and only once), can send private messages to future parties.
+
+Our CRYPTO 2022 paper (https://eprint.iacr.org/2022/237) studies a worst-case version (i.e., the adversary can choose to corrupt any set of t parties of their choice) of this problem in the information-theoretic setting. This was later extended to the computational setting in our FC 2024 work (https://fc24.ifca.ai/preproceedings/147.pdf). The original YOSO model considers iid random corruptions (the opposite extreme to worst-case corruptions).
+
+The goal of this thesis is to explore the fundamental limits of YOSO randomness generation when the corruptions are neither worst-case nor iid random.
