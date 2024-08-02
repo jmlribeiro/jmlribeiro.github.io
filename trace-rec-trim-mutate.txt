@@ -1,0 +1,12 @@
+Suppose there is an unknown bitstring x that we wish to reconstruct. In order to do so, we may ask for "traces" of x, which are obtained by sending x through a noisy channel (the most basic examples being the binary symmetric channel, which independent flips each bit of x with some probability p, or the binary erasure channel, which independently replaces each of bit of x by "?" with some probability p). How many traces do we need to reconstruct x with probability 0.99?
+
+This is the trace reconstruction problem. It is easy to pin down the "trace/sample complexity" when the noisy channel is the binary symmetric channel or the binary erasure channel, but it is considerably harder when the noisy channel introduces "deletions" (i.e., bits of x are *deleted*, not replaced by "?"). We know very little about trace reconstruction over channels with deletions -- there is an exponential gap between the best lower and upper bounds on the trace complexity (e.g., see the introduction of https://arxiv.org/abs/2102.09490).
+
+The goal of this thesis is to explore trace reconstruction and "population recovery" (a refinement of trace reconstruction where there is an *input distribution* X instead of a single input string x, and the goal is to learn properties of X, such as its suppport -- see https://arxiv.org/abs/2004.06828) over noisy channels combining deletions and bit flips inspired by theoretical models in computational biology, as discussed in https://arxiv.org/abs/2010.06083. It would also be interesting to consider extensions of the error models considered in this paper.
+
+
+The scope of this thesis depends also on the student's interests. There is space for practical implementations of reconstruction algorithms, theoretical analysis of reconstruction algorithms, coded versions of these reconstruction problems, and extensions to more general noise models beyond what is discussed in the paper above.
+
+
+
+
