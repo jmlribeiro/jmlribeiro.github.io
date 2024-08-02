@@ -1,0 +1,20 @@
+João Ribeiro (https://sites.google.com/site/joaorib94/)
+
+General themes:
+
+- Cryptography (in particular, secret sharing, multiparty computation, leakage-resilient cryptography, non-malleable cryptography)
+
+- Coding theory and information theory (in particular, design of efficient codes, sample complexity of statistical reconstruction problems, complexity of computational problems on codes and lattices) 
+
+- Pseudorandomness (in particular, derandomization and randomness extractors)
+
+
+Some concrete topics (students are welcome to contact me about other possible dissertation topics):
+
+- Trace reconstruction and population recovery from trims and mutations, motivated by connections to computational biology.
+
+- Memory-sample bounds for noisy learning problems over non-binary alphabets.
+
+- Existence of continuously non-malleable codes below 8 states.
+
+- YOSO distributed coin tossing with semi-random corruptions.
