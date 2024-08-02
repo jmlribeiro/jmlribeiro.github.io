@@ -1,0 +1,15 @@
+There is a secret string x about which you gradually learn some partial information. However, you have limited memory, and so can't just store all this information until it becomes enough to recover x perfectly. Given a memory bound B, how many samples (as a function of the length of x and B) do you need to recover x with high probability?
+
+More precisely, we consider a "streaming" setting where at each step the reconstructor learns (R,M(R,x)), where R is some uniformly random string and M is some (possibly noisy) function.
+
+In seminal work, Raz (FOCS 2016, https://arxiv.org/abs/1602.05161) considered the version of this problem where M(x,R) = <x,R>, where <.,.> denotes inner product over F_2 (the finite field of order 2). He showed that if x is a bitstring of length n and the memory bound B << n^2, then exponentially many samples are required to recover x. This result was then extended to a much larger class of learning problems (STOC 2018, https://arxiv.org/abs/1708.02639).
+
+Later work (RANDOM 2021, https://arxiv.org/abs/2107.02320), using the same techniques, refined these results in the context of the "Learning Parity with Noise" problem, which is central to post-quantum cryptography. This corresponds to a "noisy" version of Raz's original problem, where the reconstructor learns samples (R, <x,R> + Noise), with Noise following a Bernoulli distribution with success probability eps. In this case, the number of required samples is exponential whenever the memory bound B is significantly smaller than n^2/eps.
+
+Given the above, it is natural to wonder whether we can prove such memory-sample lower bounds for noisy learning problems over non-binary alphabets, and in cases where the noise is not Bernoulli. For example, we may consider a setting where x is now a string over F_q (the finite field of order q), and the reconstructor learns (R,<x,R>), where <.,.> is now the inner product over F_q. The goal of this project is to understand to what extent the techniques from the works mentioned above can be adapted to handle this setting (which learning problems, and which noise distributions).
+
+
+
+
+
+
