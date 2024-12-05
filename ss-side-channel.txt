@@ -1,0 +1,5 @@
+Esquemas de secret sharing permitem-nos partilhar um segredo entre vários participantes garantido que apenas certos subconjuntos autorizados de participantes conseguem recuperar o segredo a partir dos seus pedaços, enquanto que todos os outros subconjuntos não autorizados não aprendem informação nenhuma sobre o segredo.
+
+No entanto, esta garantia de privacidade não diz nada sobre ataques "side-channel", em que um adversário usa falhas de hardware para aprender uma pequena porção das partes de *todos* os participantes. Estes ataques são realistas e podem ser montados usando ferramentas baratas, tal como um osciloscópio, explorando falhas do hardware onde as partes são guardadas.
+
+O objectivo deste projecto é explorar até que ponto esquemas de secret sharing lineares baseados em códigos correctores de erros e utilizados em muitas aplicações (e.g., Shamir secret sharing) já são por defeito resilientes a ataques side-channel que usam ferramentas de baixa complexidade. Tais ataques podem ser capturados, por exemplo, por classes simples de circuitos booleanos, ou polinómios multivariados de grau baixo.

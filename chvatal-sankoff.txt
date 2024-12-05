@@ -1,0 +1,20 @@
+Sejam X e Y duas sequências binárias de tamanho n geradas aleatoriamente e independentemente de acordo com a distribuição uniforme sobre {0,1}^n. A "longest common subsequence" (LCS) entre X e Y é a maior sequência Z que é subsequência de X e de Y. Isto é, existem índices 1 <= i_1 < i_2 < ... < i_k <= n e 1 <= j_1 < j_2 < ... < j_k <= n tal que (X_{i_1},...,X_{i_k}) = (Y_{j_1},...,Y_{j_k}) = Z, e k é o maior inteiro para o qual isto se verifica.
+Denotamos a LCS de X e Y por LCS(X,Y), e o seu comprimento por |LCS(X,Y)|.
+
+A constante de Chvátal-Sankoff gamma é dada por
+
+gamma = lim_{n -> infty} E[|LCS(X,Y)|]/n,
+
+onde E denota valor esperado. Não é muito complicado mostrar que este limite de facto existe. O estudo desta constante iniciou-se nos anos 70 por Chvátal e Sankoff, e subsequentemente desevolveu-se uma teoria combinatorial e probabilística rica subjacente. Mesmo depois de 50 anos de investigação, não sabemos ainda o valor exacto desta constante, mas apenas que esta está entre 0.792665 e 0.826280.
+
+O objectivo deste projecto é explorar constantes de Chvátal-Sankoff em cenários em que as sequências aleatórias X e Y estão correlacionadas. A motivação advém da codificação robusta de informação em DNA (um método de armazenamento de dados em desenvolvimento que promete uma muito maior densidade de informação armazenada).
+
+Mais precisamente, consideramos o cenário em que X e Y são geradas da seguinte forma. Dada uma sequência binária w (um caso de interesse é quando w = 010101...01), geramos X eliminando cada coordenada de w independentemente com uma dada probabilidade d. Geramos Y de forma análoga mas independente a partir de w. Podemos, como acima, definir
+
+gamma(d) = lim_{n -> infty} E[|LCS(X,Y)|]/n.
+
+É possível mostrar que este limite existe para qualquer "probabilidade de eliminação" d em [0,1].
+
+Este projecto tem uma componente significativa de exploração (ao invés de simples leitura e implementação) por parte do aluno. Dado o contexto e duração deste PIC, o sucesso do projecto não se medirá pela obtenção de novos resultados, mas sim pelo esforço do aluno.
+
+Existem muitas direcções interessantes, incluindo obter melhores minorantes e majorantes para a constante no contexto de duas sequências binárias correlacionadas; estudar este problema sobre alfabetos não-binários; estudar este problema para mais do que duas sequências correlacionadas; considerar probabilidades de eliminação que dependem do símbolo ou coordenada. O aluno terá liberdade para seguir o rumo que preferir.
