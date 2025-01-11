@@ -1,0 +1,12 @@
+Título: Implementação e análise concreta de "bitmasked expander codes" com correcção de erros super-rápida
+
+Descrição: "Expander codes", introduzidos num trabalho revolucionário de Sipser e Spielman, são códigos correctores de erros lineares com baixa redundância baseados em "expander graphs" -- grafos com propriedades de expansão locais, que são objectos centrais em combinatória e teoria da computação.
+
+Algoritmos conhecidos para corrigir erros em expander codes necessitam de tempo pelo menos linear no tamanho da palavra recebida (que é uma versão corrompida da palavra do código transmitida), mesmo quando o "síndrome" desta palavra corrompida é dado de graça. Este cenário corresponde a "syndrome decoding". Em colaboração com Mahdi Cheraghchi (https://arxiv.org/abs/1901.02852), propusemos e analisámos uma versão "bitmasked" de expander codes com redundância ligeiramente maior, mas para a qual existem algoritmos de syndrome decoding com complexidade temporal *sublinear* no tamanho da palavra recebida. Quando o número de erros é pequeno, a complexidade é essencialmente logarítmica no tamanho da palavra recebida.
+
+O objectivo deste projecto é (1) implementar métodos eficientes de codificação e correcção de erros para bitmasked expander codes discutidos em https://arxiv.org/abs/1901.02852, e (2) analisar concretamente a complexidade de codificação e correcção de erros para estes códigos. 
+
+
+Literatura relevante:
+http://cs-www.cs.yale.edu/homes/spielman/PAPERS/expandersIT.pdf
+https://arxiv.org/abs/1901.02852
